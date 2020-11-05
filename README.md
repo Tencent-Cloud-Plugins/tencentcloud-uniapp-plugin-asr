@@ -6,19 +6,20 @@
 | ----------- | --------------------------------------------------------------------------------------------------------- |
 | 中文名称    | 腾讯云语音识别（ASR）插件                                                                                 |
 | 英文名称    | tencentcloud-plugin-asr                                                                                   |
-| 最新版本    | v1.0.0 (2020.08.03)                                                                                       |
+| 最新版本    | v1.0.2 (2020.11.05)                                                                                       |
 | 适用平台    | [DCloud uni-app](https://uniapp.dcloud.net.cn)                                                            |
 | 适用产品    | [腾讯云语音识别（ASR）插件](https://cloud.tencent.com/product/asr)                                        |
 | GitHub 项目 | [tencentcloud-uniapp-plugin-asr](https://github.com/Tencent-Cloud-Plugins/tencentcloud-uniapp-plugin-asr) |
 | 主创团队    | 腾讯云中小企业产品中心（SMB Product Center of Tencent Cloud）                                             |
+| 兼容平台   | H5、小程序、APP |
 
 一款帮助开发者在 uni-app 项目开发中快捷使用腾讯云语音识别（ASR）插件产品功能的插件。
 
 ## 2. 功能特性
 
 - 一句话语音识别
-- 录音文件识别
-- 实时语音识别
+- 录音文件识别(仅支持H5)
+- 实时语音识别(支持H5和小程序）
 
 ## 3. 安装指引
 
@@ -387,19 +388,32 @@ export default {
 | --------------- | ---- |
 | DCloud 插件市场 |   [腾讯云语音识别（ASR）插件](https://ext.dcloud.net.cn/plugin?id=2517)   |
 
-## 6. GitHub 版本迭代记录
+## 6. FAQ
+> 1. Q:实时语音识别功能支持APP端吗？
+>    
+>    A：目前实时语音识别只支持H5和小程序端，暂不支持APP端
 
-### 6.1. tencentcloud-uniapp-plugin-asr v1.0.0
+## 7. GitHub 版本迭代记录
+
+### 7.1. tencentcloud-uniapp-plugin-asr v1.0.2
+
+- 新增一句话语音识别功能支持APP端
+
+### 7.2. tencentcloud-uniapp-plugin-asr v1.0.1
+
+- 目录结构优化
+
+### 7.3. tencentcloud-uniapp-plugin-asr v1.0.0
 
 - 新增一句话语音识别功能
 - 新增录音文件识别功能
 - 新增实时语音识别功能
 
-## 7. 致谢
+## 8. 致谢
 
 - 该插件的 H5 平台语音录制功能参考了[Recorder](https://github.com/xiangyuecn/Recorder),特此对其主创团队进行致谢
 
-## 8. 联系我们
+## 9. 联系我们
 
 &nbsp;&nbsp;&nbsp;扫码备注“春雨”来联络到我们</br>
 ![](./images/qrcode.png)

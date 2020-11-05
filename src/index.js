@@ -18,19 +18,19 @@
 
 import {
   realtimeVoice,
-} from './realtimeVoice.js';
+} from './realtime-voice.js';
 import {
   createRecTask,
   describeTaskStatus
-} from './recTask.js';
-import { sentenceRecognition } from './sentenceRecognition';
-import randStr from './randStr.js';
+} from './rec-task.js';
+import { sentenceRecognition } from './sentence-recognition';
+import randStr from './rand-str.js';
 import {
   blob2Base64,
   blob2ArrayBuffer
-} from './blobTransfer';
+} from './blob-transfer';
 import Recorder from './recorder.js';
-import RealTimeVoiceSplit from './realTimeVoiceSplit.js';
+import RealTimeVoiceSplit from './real-time-voice-split.js';
 
 export {
   realtimeVoice, // 实时语音识别

@@ -16,7 +16,7 @@
 
 "use strict";
 
-import { blob2Base64 } from "./blobTransfer";
+import { blob2Base64 } from "./blob-transfer";
 // #ifdef H5
 import RecorderJs from "./recorder.mp3.min";
 // #endif
@@ -27,7 +27,7 @@ import RecorderJs from "./recorder.mp3.min";
 export default class RealTimeVoiceSplit {
 
   /**
-   * 
+   *
    * @param {*} [sendInterval] H5实时语音专用：语音分片间隔时间
    */
   constructor(sendInterval=1000) {
@@ -94,7 +94,6 @@ export default class RealTimeVoiceSplit {
       //实时编码队列阻塞处理
       if (!isClose) {
         if (this.realTimeSendTryEncBusy >= 2) {
-          console.log("编码队列阻塞，已丢弃一帧", 1);
           return;
         }
       }
